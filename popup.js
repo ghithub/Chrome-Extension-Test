@@ -60,7 +60,7 @@ function getImageUrl(searchTerm, callback, errorCallback) {
   var searchUrl = 'https://ajax.googleapis.com/ajax/services/search/images' +
     '?v=1.0&q=' + encodeURIComponent(searchTerm);
   var x = new XMLHttpRequest();
-  x.open('GET', searchUrl);
+   x.open('GET', searchUrl);
   // The Google image search API responds with JSON, so let Chrome parse it.
   x.responseType = 'json';
   x.onload = function() {
